@@ -1,0 +1,110 @@
+.main-header {
+  margin: 44px auto 20px;
+
+  @media (min-width: 1024px) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.logo {
+  text-align: center;
+
+  @media (min-width: 1024px) {
+    display: flex;
+    align-items: center;
+  }
+
+  &__name {
+    background: $logoColor;
+    color: $whiteColor;
+    text-decoration: none;
+    font-weight: 800;
+    font-size: 2.75em;
+    padding: 0.1em 0.275em;
+    border-radius: 6px;
+    letter-spacing: 0.05em;
+
+    @media (min-width: 1024px) {
+      margin-right: 15px;
+    }
+  }
+
+  &__subtitle {
+    font-weight: 800;
+    display: block;
+    line-height: 3em;
+  }
+}
+
+.main-navigation {
+  @media (min-width: 1024px) {
+    display: flex;
+    list-style: none;
+  }
+
+  &__item {
+    @media (min-width: 1024px) {
+      padding-left: 2.8em;
+      font-weight: 800;
+    }
+  }
+}
+
+.baner {
+  text-align: center;
+  padding: 15px;
+  background: $whiteColor;
+  margin: 0 15px;
+  border-radius: 6px;
+  box-shadow: 0 3px 0 0 rgb(0 0 0 / 5%);
+
+  @media (min-width: 750px) {
+    padding: 44px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: 1024px) {
+    display: flex;
+    padding-bottom: 20px;
+  }
+
+  &__text-info {
+    @media (min-width: 1024px) {
+      width: 65%;
+      text-align: left;
+    }
+
+    h2 {
+      font-size: 2em;
+      margin: 0.75em 0 0.5em 0;
+
+      @media (min-width: 750px) {
+        font-size: 3.5em;
+      }
+
+      @media (min-width: 1024px) {
+        margin-top: 0;
+        margin-bottom: 0.25em;
+      }
+    }
+
+    p {
+      font-size: 1.5em;
+      line-height: 1.5em;
+      margin-bottom: 20px;
+
+      @media (min-width: 750px) {
+        font-size: 2.75em;
+        line-height: 1.35em;
+      }
+    }
+  }
+
+  &__cta {
+    @media (min-width: 1024px) {
+      width: 35%;
+    }
+  }
+}
