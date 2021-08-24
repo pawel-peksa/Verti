@@ -16,7 +16,8 @@ body {
   background: $bgDarkColor;
 }
 
-.container {
+.container,
+.grid-container {
   @include desktop() {
     max-width: 980px;
   }
@@ -24,4 +25,24 @@ body {
     max-width: 1200px;
   }
   margin: 0 auto;
+}
+
+//grid
+.grid-container {
+  width: 100%;
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+
+    @for $i from 1 through $col-number {
+      .col-#{$i} {
+        width: $col-width * $i;
+      }
+    }
+  }
+}
+
+[class*="col-"] {
+  min-height: 100px;
+  border: 1px solid blue;
 }

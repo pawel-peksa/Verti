@@ -13,3 +13,7 @@ $btnColor: #1691c3;
 $tablet-width: 736px;
 $desktop-width: 980px;
 $wide-width: 1280px;
+
+//grid:
+$col-number: 12;
+$col-width: math.div(100%, $col-number);

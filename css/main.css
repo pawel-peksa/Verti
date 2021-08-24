@@ -535,18 +535,70 @@ body {
   background: #e4e4e4;
 }
 
-.container {
+.container,
+.grid-container {
   margin: 0 auto;
 }
 @media (min-width: 980px) {
-  .container {
+  .container,
+.grid-container {
     max-width: 980px;
   }
 }
 @media (min-width: 1280px) {
-  .container {
+  .container,
+.grid-container {
     max-width: 1200px;
   }
+}
+
+.grid-container {
+  width: 100%;
+}
+.grid-container .row {
+  display: flex;
+  flex-wrap: wrap;
+}
+.grid-container .row .col-1 {
+  width: 8.3333333333%;
+}
+.grid-container .row .col-2 {
+  width: 16.6666666667%;
+}
+.grid-container .row .col-3 {
+  width: 25%;
+}
+.grid-container .row .col-4 {
+  width: 33.3333333333%;
+}
+.grid-container .row .col-5 {
+  width: 41.6666666667%;
+}
+.grid-container .row .col-6 {
+  width: 50%;
+}
+.grid-container .row .col-7 {
+  width: 58.3333333333%;
+}
+.grid-container .row .col-8 {
+  width: 66.6666666667%;
+}
+.grid-container .row .col-9 {
+  width: 75%;
+}
+.grid-container .row .col-10 {
+  width: 83.3333333333%;
+}
+.grid-container .row .col-11 {
+  width: 91.6666666667%;
+}
+.grid-container .row .col-12 {
+  width: 100%;
+}
+
+[class*=col-] {
+  min-height: 100px;
+  border: 1px solid blue;
 }
 
 .header {
