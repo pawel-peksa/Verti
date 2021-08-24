@@ -1,0 +1,67 @@
+// .banner,
+// .banner * {
+//   border: 1px solid green;
+// }
+
+.banner {
+  background-color: $bgLightColor;
+  padding: 0 20px;
+  margin: 0 15px;
+  border-radius: 6px;
+  @include tablet() {
+    padding: 2.5rem;
+    margin: 0 2rem;
+  }
+  @include desktop() {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+  }
+  .text-wrapper,
+  .button-wrapper {
+    padding: 0.5rem 0;
+    h2 {
+      font-size: 1.8rem;
+      text-align: center;
+      margin: 1.4rem auto 0.8rem;
+      @include tablet() {
+        font-size: 3.5rem;
+      }
+      @include desktop() {
+        text-align: left;
+      }
+    }
+    p {
+      color: #696969;
+      font-size: 1.4rem;
+      font-weight: 300;
+      text-align: center;
+      line-height: 1.5;
+      @include tablet() {
+        font-size: 2.75rem;
+        line-height: 1.35;
+      }
+      @include desktop() {
+        text-align: left;
+      }
+    }
+  }
+  .text-wrapper {
+    @include desktop() {
+      flex-basis: 60%;
+    }
+  }
+  .button-wrapper {
+    @include desktop() {
+      flex-basis: 35%;
+    }
+  }
+
+  .btn {
+    @include desktop() {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: space-between;
+    }
+  }
+}

@@ -6,11 +6,15 @@
   border-radius: 6px;
   font-weight: 700;
   font-size: 1.15rem;
-  padding: 0.75rem 0.8rem;
+  padding: 1rem 2rem;
   width: 100%;
   display: flex;
   justify-content: center;
-  margin-bottom: 1.15rem;
+  margin: 1.15rem 0;
+  @include tablet {
+    font-size: 2rem;
+    padding: 1.8rem;
+  }
 
   span {
     margin: 0 10px;
