@@ -1,0 +1,17 @@
+// Media breakpoints: 736px, 980px
+@mixin tablet() {
+  @media (min-width: #{$tablet-width}) {
+    @content;
+  }
+}
+@mixin desktop() {
+  @media (min-width: #{$desktop-width}) {
+    @content;
+  }
+}
+
+@mixin wide() {
+  @media (min-width: #{$wide-width}) {
+    @content;
+  }
+}

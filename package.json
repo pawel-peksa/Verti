@@ -1,0 +1,23 @@
+{
+  "name": "sass",
+  "version": "2.0.0",
+  "scripts": {
+    "preinstall": "npx npm-force-resolutions",
+    "start": "gulp",
+    "build": "gulp sass"
+  },
+  "resolutions": {
+    "graceful-fs": "^4.2.4"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^6.1.0",
+    "gulp-sass": "^5.0.0",
+    "gulp-sourcemaps": "^2.6.5",
+    "sass": "^1.26.3"
+  },
+  "browserslist": [
+    "defaults"
+  ]
+}
