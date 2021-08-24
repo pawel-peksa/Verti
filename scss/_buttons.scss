@@ -1,0 +1,23 @@
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  color: $textColor;
+  background-color: $bgDarkColor;
+  border-radius: 6px;
+  font-weight: 700;
+  font-size: 1.15rem;
+  padding: 0.75rem 0.8rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1.15rem;
+
+  span {
+    margin: 0 10px;
+  }
+}
+
+.btn-primary {
+  background-color: $btnColor;
+  color: $bgLightColor;
+}
