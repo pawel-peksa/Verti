@@ -13,6 +13,10 @@ body {
   background: $bgDarkColor;
 }
 
+.shadow {
+  box-shadow: 0px 3px 0px 0px rgba(0, 0, 0, 0.05);
+}
+
 .container,
 .grid-container {
   @include desktop() {
@@ -33,7 +37,10 @@ body {
 
     @for $i from 1 through $col-number {
       .col-#{$i} {
-        width: $col-width * $i;
+        width: 100%;
+        @include desktop() {
+          width: $col-width * $i;
+        }
       }
     }
   }
