@@ -857,6 +857,7 @@ body {
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
+    padding: 2.5rem 4.5rem;
   }
 }
 .banner .text-wrapper,
