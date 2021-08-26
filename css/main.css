@@ -743,6 +743,7 @@ body {
 @media (min-width: 736px) {
   .logo a h1 {
     font-size: 3rem;
+    padding: 12px;
     margin-bottom: 0.4rem;
   }
 }
@@ -900,7 +901,7 @@ body {
 @media (min-width: 980px) {
   .main-nav a {
     border-radius: 6px;
-    padding: 8px 15px;
+    padding: 2px 15px;
     margin-left: 0.5em;
     font-size: 0.8rem;
     letter-spacing: 0.025em;
