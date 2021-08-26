@@ -689,6 +689,13 @@ body {
   color: #ffffff;
 }
 
+@media (min-width: 736px) {
+  .btn-info {
+    font-size: 1.2rem;
+    padding: 1rem;
+  }
+}
+
 .header {
   min-width: 320px;
 }
@@ -1043,6 +1050,12 @@ body {
   background-color: white;
   padding: 30px;
 }
+@media (min-width: 736px) {
+  .info {
+    padding: 60px 40px;
+    margin-top: 3rem;
+  }
+}
 .info .text-wrapper {
   padding-bottom: 2em;
   border-bottom: solid 1px #e8e8e8;
@@ -1050,6 +1063,11 @@ body {
 .info .text-wrapper h2 {
   font-size: 1.1rem;
   margin-bottom: 1em;
+}
+@media (min-width: 736px) {
+  .info .text-wrapper h2 {
+    font-size: 2rem;
+  }
 }
 .info .text-wrapper p {
   font-size: 0.9rem;
