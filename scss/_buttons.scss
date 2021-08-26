@@ -30,4 +30,9 @@
     font-size: 1.2rem;
     padding: 1rem;
   }
+  @include desktop() {
+    display: inline-block;
+    width: inherit;
+    padding: 12px 30px;
+  }
 }
