@@ -1154,4 +1154,14 @@ body {
 .info .img-wrapper .btn {
   margin-top: 2em;
 }
+
+.footer {
+  padding: 40px 30px;
+}
+.footer .links {
+  border-bottom: 1px solid #ccc;
+}
+.footer .links a {
+  display: block;
+}
 /*# sourceMappingURL=main.css.map */
