@@ -1,24 +1,43 @@
 .footer {
   padding: 40px 30px;
 
+  @include tablet() {
+    padding: 40px;
+  }
+
   .flex {
     @include tablet() {
       display: flex;
       flex-wrap: wrap;
     }
+    @include desktop() {
+      flex-wrap: nowrap;
+    }
   }
 
   .box {
     border-bottom: 1px solid #ccc;
+
     @include tablet() {
-      min-width: 50%;
+      flex-basis: 50%;
       border-bottom: none;
+    }
+
+    @include desktop() {
+      flex-basis: 25%;
+      line-height: 33px;
     }
   }
   h3 {
     font-size: 1.1em;
     padding-top: 20px;
     margin-bottom: 1em;
+    @include tablet() {
+      font-size: 1.25rem;
+    }
+    @include wide() {
+      font-size: 1.35rem;
+    }
   }
 
   .links {
@@ -30,14 +49,22 @@
       color: #696969;
       font-size: 0.9rem;
       font-weight: 300;
+      @include wide() {
+        font-size: 1rem;
+      }
     }
   }
 
   .contact {
     border-bottom: 1px solid #ccc;
+
     @include tablet() {
-      min-width: 50%;
+      flex-basis: 50%;
       border-bottom: none;
+    }
+
+    @include desktop() {
+      flex-basis: 25%;
     }
 
     .fab {
@@ -52,21 +79,50 @@
     .addres {
       font-size: 0.9rem;
       margin: 1rem 0 2rem;
+
+      @include wide() {
+        font-size: 1rem;
+      }
     }
   }
 
   .copy {
     font-size: 0.9rem;
     padding: 20px 0;
+
     @include tablet() {
       padding: 0;
       display: flex;
       justify-content: center;
     }
+
     ul {
       list-style: none;
+      color: #aaa;
+
       @include tablet() {
         text-align: center;
+      }
+
+      @include desktop() {
+        display: flex;
+      }
+
+      @include wide() {
+        font-size: 1rem;
+      }
+
+      li:not(li:last-child) {
+        @include desktop() {
+          border-right: 1px solid #ccc;
+          padding: 0 10px;
+        }
+      }
+
+      li:last-child {
+        @include desktop() {
+          padding: 0 10px;
+        }
       }
     }
   }
