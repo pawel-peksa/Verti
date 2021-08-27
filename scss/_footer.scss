@@ -1,6 +1,20 @@
 .footer {
   padding: 40px 30px;
 
+  .flex {
+    @include tablet() {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+
+  .box {
+    border-bottom: 1px solid #ccc;
+    @include tablet() {
+      min-width: 50%;
+      border-bottom: none;
+    }
+  }
   h3 {
     font-size: 1.1em;
     padding-top: 20px;
@@ -8,7 +22,6 @@
   }
 
   .links {
-    border-bottom: 1px solid #ccc;
     padding-bottom: 3em;
     margin-bottom: 1em;
 
@@ -22,6 +35,10 @@
 
   .contact {
     border-bottom: 1px solid #ccc;
+    @include tablet() {
+      min-width: 50%;
+      border-bottom: none;
+    }
 
     .fab {
       background-color: $textColor;
@@ -41,8 +58,16 @@
   .copy {
     font-size: 0.9rem;
     padding: 20px 0;
+    @include tablet() {
+      padding: 0;
+      display: flex;
+      justify-content: center;
+    }
     ul {
       list-style: none;
+      @include tablet() {
+        text-align: center;
+      }
     }
   }
 }

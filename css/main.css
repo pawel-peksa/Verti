@@ -1158,13 +1158,27 @@ body {
 .footer {
   padding: 40px 30px;
 }
+@media (min-width: 736px) {
+  .footer .flex {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+.footer .box {
+  border-bottom: 1px solid #ccc;
+}
+@media (min-width: 736px) {
+  .footer .box {
+    min-width: 50%;
+    border-bottom: none;
+  }
+}
 .footer h3 {
   font-size: 1.1em;
   padding-top: 20px;
   margin-bottom: 1em;
 }
 .footer .links {
-  border-bottom: 1px solid #ccc;
   padding-bottom: 3em;
   margin-bottom: 1em;
 }
@@ -1176,6 +1190,12 @@ body {
 }
 .footer .contact {
   border-bottom: 1px solid #ccc;
+}
+@media (min-width: 736px) {
+  .footer .contact {
+    min-width: 50%;
+    border-bottom: none;
+  }
 }
 .footer .contact .fab {
   background-color: #444444;
@@ -1193,7 +1213,19 @@ body {
   font-size: 0.9rem;
   padding: 20px 0;
 }
+@media (min-width: 736px) {
+  .footer .copy {
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+}
 .footer .copy ul {
   list-style: none;
+}
+@media (min-width: 736px) {
+  .footer .copy ul {
+    text-align: center;
+  }
 }
 /*# sourceMappingURL=main.css.map */
