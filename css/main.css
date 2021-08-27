@@ -542,10 +542,10 @@ body {
 @media (min-width: 980px) {
   .container,
 .grid-container {
-    max-width: 980px;
+    max-width: 960px;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 1280px) {
   .container,
 .grid-container {
     max-width: 1200px;
@@ -1016,10 +1016,10 @@ body {
     left: -12px;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 1280px) {
   .articles {
     padding: 40px 0 0 0;
-    max-width: 1224px;
+    max-width: 1304px;
     position: relative;
     left: -12px;
   }
@@ -1094,7 +1094,7 @@ body {
     font-size: 2rem;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 1280px) {
   .info .text-wrapper h2 {
     font-size: 2.25rem;
   }
@@ -1103,7 +1103,7 @@ body {
   font-size: 0.9rem;
   margin-bottom: 2em;
 }
-@media (min-width: 1200px) {
+@media (min-width: 1280px) {
   .info .text-wrapper p {
     font-size: 1rem;
     line-height: 2rem;
@@ -1119,7 +1119,7 @@ body {
     font-size: 1.2rem;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 1280px) {
   .info .img-wrapper h3 {
     font-size: 1.35rem;
   }
@@ -1127,7 +1127,7 @@ body {
 .info .img-wrapper .gallery-left {
   padding-right: 5px;
 }
-@media (min-width: 1200px) {
+@media (min-width: 1280px) {
   .info .img-wrapper .gallery-left {
     padding-right: 10px;
   }
@@ -1135,7 +1135,7 @@ body {
 .info .img-wrapper .gallery-right {
   padding-left: 5px;
 }
-@media (min-width: 1200px) {
+@media (min-width: 1280px) {
   .info .img-wrapper .gallery-right {
     padding-right: 10px;
   }
@@ -1161,6 +1161,11 @@ body {
 @media (min-width: 736px) {
   .footer {
     padding: 40px;
+  }
+}
+@media (min-width: 980px) {
+  .footer {
+    padding: 40px 0;
   }
 }
 @media (min-width: 736px) {
@@ -1199,7 +1204,7 @@ body {
     font-size: 1.25rem;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 1280px) {
   .footer h3 {
     font-size: 1.35rem;
   }
@@ -1214,7 +1219,7 @@ body {
   font-size: 0.9rem;
   font-weight: 300;
 }
-@media (min-width: 1200px) {
+@media (min-width: 1280px) {
   .footer .links a {
     font-size: 1rem;
   }
@@ -1245,7 +1250,7 @@ body {
   font-size: 0.9rem;
   margin: 1rem 0 2rem;
 }
-@media (min-width: 1200px) {
+@media (min-width: 1280px) {
   .footer .contact .addres {
     font-size: 1rem;
   }
@@ -1275,7 +1280,7 @@ body {
     display: flex;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 1280px) {
   .footer .copy ul {
     font-size: 1rem;
   }

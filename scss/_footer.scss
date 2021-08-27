@@ -5,6 +5,10 @@
     padding: 40px;
   }
 
+  @include desktop() {
+    padding: 40px 0;
+  }
+
   .flex {
     @include tablet() {
       display: flex;
