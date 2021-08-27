@@ -53,6 +53,10 @@
       color: #696969;
       font-size: 0.9rem;
       font-weight: 300;
+
+      &:hover {
+        text-decoration: none;
+      }
       @include wide() {
         font-size: 1rem;
       }
@@ -78,6 +82,11 @@
       font-size: 1.3rem;
       border-radius: 5px;
       margin-right: 4px;
+      transition: background-color 0.2s ease-in;
+
+      &:hover {
+        background-color: lighten($textColor, 20%);
+      }
     }
 
     .addres {

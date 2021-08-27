@@ -1103,11 +1103,23 @@ body {
   font-size: 0.9rem;
   margin-bottom: 2em;
 }
-@media (min-width: 1280px) {
+@media (min-width: 980px) {
   .info .text-wrapper p {
     font-size: 1rem;
     line-height: 2rem;
   }
+}
+@media (min-width: 980px) {
+  .info .text-wrapper p {
+    font-size: 1rem;
+    line-height: 2.25rem;
+  }
+}
+.info .text-wrapper a {
+  color: #1691c3;
+}
+.info .text-wrapper a:hover {
+  text-decoration: none;
 }
 .info .img-wrapper h3 {
   font-size: 1rem;
@@ -1219,6 +1231,9 @@ body {
   font-size: 0.9rem;
   font-weight: 300;
 }
+.footer .links a:hover {
+  text-decoration: none;
+}
 @media (min-width: 1280px) {
   .footer .links a {
     font-size: 1rem;
@@ -1245,6 +1260,10 @@ body {
   font-size: 1.3rem;
   border-radius: 5px;
   margin-right: 4px;
+  transition: background-color 0.2s ease-in;
+}
+.footer .contact .fab:hover {
+  background-color: #777777;
 }
 .footer .contact .addres {
   font-size: 0.9rem;
