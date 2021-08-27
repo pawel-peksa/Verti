@@ -1158,10 +1158,42 @@ body {
 .footer {
   padding: 40px 30px;
 }
+.footer h3 {
+  font-size: 1.1em;
+  padding-top: 20px;
+  margin-bottom: 1em;
+}
 .footer .links {
   border-bottom: 1px solid #ccc;
+  padding-bottom: 3em;
+  margin-bottom: 1em;
 }
 .footer .links a {
   display: block;
+  color: #696969;
+  font-size: 0.9rem;
+  font-weight: 300;
+}
+.footer .contact {
+  border-bottom: 1px solid #ccc;
+}
+.footer .contact .fab {
+  background-color: #444444;
+  color: #e4e4e4;
+  padding: 0.5rem;
+  font-size: 1.3rem;
+  border-radius: 5px;
+  margin-right: 4px;
+}
+.footer .contact .addres {
+  font-size: 0.9rem;
+  margin: 1rem 0 2rem;
+}
+.footer .copy {
+  font-size: 0.9rem;
+  padding: 20px 0;
+}
+.footer .copy ul {
+  list-style: none;
 }
 /*# sourceMappingURL=main.css.map */
